@@ -1,0 +1,14 @@
+name: OfflineNoTnt
+main: io.github.zorua162.offlinenotnt.OfflineNoTnt
+version: ${version}${build.number}
+icon: TNT
+
+prefix: OfflineNoTnt
+
+authors: [zorua162]
+
+softdepend: BSkyBlock
+
+permissions:
+  admin.offlinenotnt.*:
+    description: None

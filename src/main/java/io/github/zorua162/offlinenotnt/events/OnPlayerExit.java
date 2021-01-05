@@ -22,6 +22,7 @@ public class OnPlayerExit implements Listener {
         this.addon = addon;
     }
 
+
     /**
      * Disable TNT flag if all players on an island leave
      *
@@ -46,6 +47,7 @@ public class OnPlayerExit implements Listener {
         @NonNull Optional<Flag> tntFlag;
         tntFlag = addon.getPlugin().getFlagsManager().getFlag("TNT_DAMAGE");
 
+        //Set the flag to False to disable TNT_DAMAGE while the player is offline
         island.setSettingsFlag(tntFlag.get(), false);
     }
 }
